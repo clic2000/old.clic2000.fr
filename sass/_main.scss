@@ -12,18 +12,10 @@
   margin-top: 160px;
 }
 
-//LOGO MOBILE
-
-@media screen and (max-width: 500px) {
-  #logo {
-    margin-top: 40px;
-    margin-left: 40px;
-  }
-}
-
 //MENU
 
 .menu {
+    margin-top: 100px;
   li {
     list-style: none;
   }
@@ -41,3 +33,5 @@
     color: $color-one;
   }
 }
+
+//
