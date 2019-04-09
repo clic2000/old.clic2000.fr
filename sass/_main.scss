@@ -3,19 +3,41 @@
 //LOGO
 
 #logo {
-    background-color: $color-two;
-    color: $color-one; 
-    border-radius: 50%;
-    width: 160px;
-    height: 160px;
-    letter-spacing: $letter-spacing;
-    margin-top: 160px;
+  background-color: $color-two;
+  color: $color-one;
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  letter-spacing: $letter-spacing;
+  margin-top: 160px;
 }
+
+//LOGO MOBILE
 
 @media screen and (max-width: 500px) {
-    #logo {
-        margin-top: 40px;
-        margin-left: 40px;  
-    }
+  #logo {
+    margin-top: 40px;
+    margin-left: 40px;
+  }
 }
 
+//MENU
+
+.menu {
+  li {
+    list-style: none;
+  }
+  a {
+    padding: 7px;
+    background-color: $color-two;
+    text-decoration: none;
+    color: $color-one;
+    letter-spacing: $letter-spacing;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+  }
+  a:hover {
+    transform: translate(18px, 0px);
+    color: $color-one;
+  }
+}
