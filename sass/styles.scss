@@ -1,65 +1,70 @@
 @charset "utf-8";
 @import "main";
 @import "variables";
+@import "font";
 @import "mobile";
 @import "../bulma/bulma-0.7.4/bulma.sass";
 
 body,
 html {
-  width: 100%;
-  height: 100%;
-  background-color: $color-one;
-  a {
-    position: relative;
-    color: $color-two;
-    text-decoration: none;
-  }
-  a:hover {
-    color: $color-two;
-  }
-  a:before {
-    content: "";
-    position: absolute;
     width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: $color-two;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    transform: scaleX(0);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-  }
-  a:not(.button):not(#link-logo):not(#logo-chrys):hover:before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    transform: scaleX(1);
-  }
+    height: 100%;
+    background-color: $color-one;
+
+    a {
+        position: relative;
+        color: $color-two;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: $color-two;
+    }
+
+    a:before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: $color-two;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transition: all 0.3s ease-in-out 0s;
+        transition: all 0.3s ease-in-out 0s;
+    }
+
+    a:not(.button):not(#link-logo):not(#logo-chrys):hover:before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+    }
 }
 
 .shadow {
-  box-shadow: inset 0 -6px 0 rgba(191, 48, 108, 0.2);
+    box-shadow: inset 0 -6px 0 rgba(191, 48, 108, 0.2);
 }
 
 .button {
-  background-color: $color-two;
-  color: $color-one;
-  border: none;
-  margin-top: 30px;
-  text-align: center;
-  text-decoration: none;
-  letter-spacing: $letter-spacing;
-  border-radius: 0%;
+    background-color: $color-two;
+    color: $color-one;
+    border: none;
+    margin-top: 30px;
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: $letter-spacing;
+    border-radius: 0%;
 }
 
 .button:hover {
-  background-color: $color-one;
-  color: $color-two;
-  border: 1px $color-two solid;
+    background-color: $color-one;
+    color: $color-two;
+    border: 1px $color-two solid;
 }
 
 .footer {
-  border-top: 1px solid rgba(191, 48, 108, 0.2);
-  background-color: $color-one;
+    border-top: 1px solid rgba(191, 48, 108, 0.2);
+    background-color: $color-one;
 }
