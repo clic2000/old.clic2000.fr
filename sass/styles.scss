@@ -5,9 +5,22 @@
 @import "mobile";
 @import "../bulma/bulma-0.7.4/bulma.sass";
 
+// FONTS
+
 .title {
-    font-family: terminal_grotesque;
+    font-family: $title-font;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $title-font;
+}
+
+// GENERAL
 
 body,
 html {
