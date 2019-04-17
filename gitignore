@@ -4,6 +4,9 @@
 *.sass.map
 *.scss.map
 
+# CSS
+assets/css/
+
 # ---> macOS
 # General
 .DS_Store
@@ -11,7 +14,7 @@
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
 
 # Thumbnails
 ._*
