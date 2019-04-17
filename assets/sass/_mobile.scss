@@ -1,0 +1,24 @@
+@import "variables";
+
+@media screen and (max-width: 500px) {
+  //LOGO
+  #logo {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  .menu {
+    margin-top: 40px;
+  }
+  //ILLUSTRATION
+  #illustration {
+    margin-top: -130px;
+  }
+  .article {
+    margin-top: -130px;
+  }
+  //ARTICLE COOP
+  .coop {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

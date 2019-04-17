@@ -1,0 +1,73 @@
+@import "variables";
+
+//LOGO
+
+#logo {
+  width: 160px;
+  height: 160px;
+  margin-top: 160px;
+  a {
+    text-decoration: none;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+  }
+  a:hover {
+    transform: translate(18px, 0px);
+  }
+}
+
+//MENU
+
+.menu {
+  margin-top: 100px;
+  li {
+    list-style: none;
+  }
+  a {
+    padding: 7px;
+    background-color: $color-two;
+    text-decoration: none;
+    color: $color-one;
+    letter-spacing: $letter-spacing;
+    transition: all 0.3s ease-out;
+    display: inline-block;
+  }
+  a:hover {
+    transform: translate(18px, 0px);
+    color: $color-one;
+  }
+}
+
+// ILLUSTRATION
+
+#illustration {
+  margin-top: 20px;
+  img {
+    height: 500px;
+    width: auto;
+  }
+}
+
+//BRAND-NAME
+
+#brand-name {
+  color: $color-two;
+}
+
+// FORMULAIRE
+
+.formulaire {
+  margin-top: 110px;
+  margin-bottom: 100px;
+}
+
+//TEXT COOPERATIVE
+
+.coop {
+  margin-top: 410px;
+  margin-bottom: 200px;
+
+  img {
+    margin-top: 30px;
+  }
+}
