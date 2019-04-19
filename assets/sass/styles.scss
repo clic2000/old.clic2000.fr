@@ -53,7 +53,7 @@ html {
         transition: all 0.3s ease-in-out 0s;
     }
 
-    a:not(.button):not(#link-logo):not(#logo-chrys):not(.dropdown-item):hover:before {
+    a:not(.button):not(#link-logo):not(#logo-chrys):not(.dropdown-item):not(#home):hover:before {
         visibility: visible;
         -webkit-transform: scaleX(1);
         transform: scaleX(1);
