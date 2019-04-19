@@ -25,16 +25,16 @@
   }
   a {
     padding: 7px;
-    background-color: $color-two;
+    background-color: $purple-light;
     text-decoration: none;
-    color: $color-one;
+    color: $gray-pink;
     letter-spacing: $letter-spacing;
     transition: all 0.3s ease-out;
     display: inline-block;
   }
   a:hover {
     transform: translate(18px, 0px);
-    color: $color-one;
+    color: $gray-pink;
   }
 }
 
@@ -51,7 +51,7 @@
 //BRAND-NAME
 
 #brand-name {
-  color: $color-two;
+  color: $purple-light;
 }
 
 // MARGES CONTENU
