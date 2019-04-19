@@ -1,29 +1,46 @@
 @import "variables";
 
 @media screen and (max-width: 500px) {
-  //LOGO
-  #logo {
-    margin-top: 30px;
-    margin-left: 40px;
-  }
-  .menu {
-    margin-top: 40px;
-  }
 
-  .brand-logo {
-    height: 50px;
-  }
-  
-  //ILLUSTRATION
-  #illustration {
-    margin-top: -130px;
-  }
-  .article {
-    margin-top: -130px;
-  }
-  //ARTICLE COOP
-  .coop {
-    margin-top: 30px;
-    margin-bottom: 30px;
-  }
+    //LOGO
+    #logo {
+        margin-top: 30px;
+        margin-left: 40px;
+    }
+
+    .menu {
+        margin-top: 40px;
+    }
+
+    .brand-logo {
+        height: 50px;
+    }
+
+    //ILLUSTRATION
+    #illustration {
+        margin-top: -130px;
+    }
+
+    .article {
+        margin-top: -130px;
+    }
+
+    //CONTENT
+
+    %margins-mobile {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .coop {
+      @extend %margins-mobile;
+    }
+
+    .formulaire {
+      @extend %margins-mobile;
+    }
+
+    .art {
+      @extend %margins-mobile;
+    }
 }
