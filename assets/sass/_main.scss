@@ -67,7 +67,7 @@
   @extend %margins-content;
 }
 
-//TEXT COOPERATIVE
+// TEXTE COOPERATIVE
 
 .coop {
   @extend %margins-content;
@@ -75,4 +75,10 @@
   img {
     margin-top: 30px;
   }
+}
+
+// CONTENU ARTISANAT
+
+.art {
+  @extend %margins-content;
 }
