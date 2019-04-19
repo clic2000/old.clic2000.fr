@@ -85,3 +85,13 @@ html {
     border-top: 1px solid rgba(191, 48, 108, 0.2);
     background-color: $gray-pink;
 }
+
+.site {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1;
+}
