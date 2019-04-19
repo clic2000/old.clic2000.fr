@@ -54,18 +54,23 @@
   color: $color-two;
 }
 
+// MARGES CONTENU
+
+%margins-content {
+  margin-top: 110px;
+  margin-bottom: 100px;
+}
+
 // FORMULAIRE
 
 .formulaire {
-  margin-top: 110px;
-  margin-bottom: 100px;
+  @extend %margins-content;
 }
 
 //TEXT COOPERATIVE
 
 .coop {
-  margin-top: 410px;
-  margin-bottom: 200px;
+  @extend %margins-content;
 
   img {
     margin-top: 30px;
