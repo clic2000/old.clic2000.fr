@@ -3,82 +3,97 @@
 //LOGO
 
 #logo {
-  width: 150px;
-  height: 150px;
-  margin-top: 150px;
+    width: 150px;
+    height: 150px;
+    margin-top: 150px;
 }
 
 // BRAND-LOGO
 
 .brand-logo {
-  width: 150px;
-  height: 150px;
-  font-family: $title-font;
+    width: 150px;
+    height: 150px;
+    font-family: $title-font;
 }
 
 //MENU
 
 .menu {
-  margin-top: 100px;
-  li {
-    list-style: none;
-  }
-  a {
-    padding: 7px;
-    background-color: $purple-light;
-    text-decoration: none;
-    color: $gray-pink;
-    letter-spacing: $letter-spacing;
-    transition: all 0.3s ease-out;
-    display: inline-block;
-  }
-  a:hover {
-    transform: translate(18px, 0px);
-    color: $gray-pink;
-  }
+    margin-top: 100px;
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        padding: 7px;
+        background-color: $purple-light;
+        text-decoration: none;
+        color: $gray-pink;
+        letter-spacing: $letter-spacing;
+        transition: all 0.3s ease-out;
+        display: inline-block;
+    }
+
+    a:hover {
+        transform: translate(18px, 0px);
+        color: $gray-pink;
+    }
 }
 
 // ILLUSTRATION
 
 #illustration {
-  margin-top: 20px;
-  img {
-    height: 500px;
-    width: auto;
-  }
+    margin-top: 20px;
+
+    img {
+        height: 500px;
+        width: auto;
+    }
 }
 
 //BRAND-NAME
 
 #brand-name {
-  color: $purple-light;
+    color: $purple-light;
 }
 
 // MARGES CONTENU
 
 %margins-content {
-  margin-top: 110px;
-  margin-bottom: 100px;
+    margin-top: 110px;
+    margin-bottom: 100px;
 }
 
 // FORMULAIRE
 
 .formulaire {
-  @extend %margins-content;
+    @extend %margins-content;
 }
 
 // TEXTE COOPERATIVE
 
 .coop {
-  @extend %margins-content;
+    @extend %margins-content;
 
-  img {
-    margin-top: 30px;
-  }
+    img:hover {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        -webkit-transition: all 0.3s;
+        transition: all 0.3s;
+    }
+
+    img {
+        margin-top: 30px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+
 }
 
 // CONTENU ARTISANAT
 
 .art {
-  @extend %margins-content;
+    @extend %margins-content;
 }
