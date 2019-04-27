@@ -16,3 +16,15 @@ function toggleDropdown() {
        element.classList.toggle("is-active");
 }
 
+//Fade in
+
+
+function fadein() {
+       var el = document.getElementsByClassName('section')[0];
+       el.classList.remove('hide');
+       el.classList.add('show');
+}
+
+window.onload = fadein();
+
+
