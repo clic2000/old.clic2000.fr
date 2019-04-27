@@ -96,3 +96,30 @@
 .art {
     @extend %margins-content;
 }
+
+// REFERENCES
+
+.ref {
+    @extend %margins-content;
+}
+
+.blur {
+    filter: blur(1px) grayscale(100%);
+}
+
+.blur:hover {
+    filter: none;
+}
+
+.head-bloc {
+    padding-bottom: 5.5em;
+}
+
+.main-bloc {
+    margin-bottom: 7em;
+    padding-bottom: 5.5em;
+    border-bottom: solid 1px rgba(191, 48, 108, 0.2);
+    margin-top: 7em;
+    padding-top: 5.5em;
+    border-top : solid 1px rgba(191, 48, 108, 0.2);
+}
