@@ -96,3 +96,17 @@
 .art {
     @extend %margins-content;
 }
+
+// REFERENCES
+
+.ref {
+    @extend %margins-content;
+}
+
+.blur {
+    filter: blur(1px) grayscale(100%);
+}
+
+.blur:hover {
+    filter: none;
+}
