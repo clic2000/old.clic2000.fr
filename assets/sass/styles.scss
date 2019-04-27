@@ -71,3 +71,14 @@ html {
 .site-content {
     flex: 1;
 }
+
+//FILTER FOR IMAGES
+
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.grayscale:hover {
+    filter: grayscale(0%);
+    transition: all 1s;
+}
