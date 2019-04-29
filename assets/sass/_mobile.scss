@@ -44,4 +44,8 @@
     .art {
       @extend %margins-mobile;
     }
+
+    .ref {
+        @extend %margins-mobile;
+    }
 }
