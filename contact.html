@@ -5,59 +5,99 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Clic2000</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Clic2000 - Contact</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
     integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
   <meta name="description" content="Artisanat numérique, création de sites web et infogérance sur mesure.">
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/img/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/img/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/img/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/img/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/img/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/img/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/img/favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/img/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicons/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
-  <div class="container">
+<body class="site">
+  <div class="container site-content">
     <!-- Logo -->
     <div class="columns">
-      <div class="column is-3">
-          <div id="logo">
-              <a href="index.html" id="link-logo"><img src="img/logo.png" alt="Clic2000 logo with eyes"></a>
+      <div class="column is-4">
+        <div id="logo">
+          <a href="index.html" id="link-logo"><img src="assets/img/logo.svg" alt="Logo de Clic2000 avec deux yeux regardant le contenu de la page"></a>
+        </div>
+        <h1 class="brand-logo has-text-centered is-size-3">
+          <a id="home" href="index.html">CLIC2000</a>
+        </h1>
+        <!-- Menu Mobile -->
+        <div class="is-hidden-desktop">
+          <div class="dropdown" id="menu">
+            <div class="dropdown-trigger">
+              <button class="button" aria-haspopup="true" aria-controls="dropdown-menu"
+                onclick="toggleDropdown(); return false;">
+                <span>Menu</span>
+                <span class="icon is-small">
+                  <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </span>
+              </button>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+              <div class="dropdown-content">
+                <a role="menuitem" href="artisanat.html" class="dropdown-item">Artisanat Numérique</a>
+                <a role="menuitem" href="services.html" class="dropdown-item">Services</a>
+                <a role="menuitem" href="cooperative.html" class="dropdown-item">Coopérative</a>
+                <a role="menuitem" href="references.html" class="dropdown-item">Références</a>
+                <a role="menuitem" href="contact.html" class="dropdown-item">Contact</a>
+            </div>
+            </div>
           </div>
-        <!-- Menu  -->
-        <div class="menu">
-          <ul>
-            <li><a href="#">Artisanat numérique</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Coopérative</a></li>
-            <li><a href="#">Références</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
+        </div>
+        <!-- Menu Screen -->
+        <div class="is-hidden-touch">
+          <div class="menu" role="menu">
+            <ul>
+              <li><a role="menuitem" href="artisanat.html">Artisanat numérique</a></li>
+              <li><a role="menuitem" href="services.html">Services</a></li>
+              <li><a role="menuitem" href="cooperative.html">Coopérative</a></li>
+              <li><a role="menuitem" href="references.html">Références</a></li>
+              <li><a role="menuitem" href="contact.html">Contact</a></li>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="column is-6 is-offset-1">
+      <div class="content column is-7">
         <!-- Formulaire -->
         <section class="section formulaire">
-          <div class="columns">
-            <div class="column">
-              <div class="title">Comment nous contacter ?</div>
-              <p>La méthode la plus rapide pour nous joindre est l'e-mail. Nous utilisons des alias pour gérer nos
-                adresses de contact, ainsi l'information est dirigée directement vers la cible et c'est donc la manière
-                la
-                plus efficace de nous contacter.<br />
-                <br />
-                Si nous décidons de mener un projet ensemble, vous pourrez nous joindre par téléphone pour traiter vos
-                demandes de support.<br /></p><br />
+              <h1 class="is-size-2 title">Comment nous contacter ?</h1>
+              <p>
+                La méthode la plus rapide pour nous joindre est l'e-mail, l'information est transmise directement au bon endroit.
+              </p>
+              <p>
+                Si nous décidons de mener un projet ensemble, vous pourrez nous joindre par téléphone pour traiter vos demandes de support.<br />
+              </p>
+              <p>
+                Utilisez le formulaire ci dessous ou, si vous préférez votre client e-mail, écrivez-nous à <a href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#099;&#108;&#105;&#099;&#050;&#048;&#048;&#048;&#046;&#102;&#114;?subject=Premier contact">cette adresse</a>.
+              </p> 
               <form action="https://formspree.io/contact@clic2000.fr" method="POST" />
               <div class="field">
                 <label class="label">Prénom et nom</label>
-                <div class="field-body is-horizontal">
-                  <div class="field">
-                    <p class="control is-expanded">
-                      <input class="input" type="name" name="first name" placeholder="Prénom">
-                    </p>
-                  </div>
-                  <div class="field">
-                    <p class="control is-expanded">
-                      <input class="input" type="surname" name="surname" placeholder="Nom">
-                    </p>
-                  </div>
+                <div class="control has-icons-left">
+                  <input class="input" type="name" name="first name" placeholder="Comment doit-on vous appeler ?">
+                  <span class="icon is-small is-left">
+                    <i class="fa fa-user"></i>
+                  </span>
                 </div>
               </div>
 
@@ -65,13 +105,19 @@
                 <label class="label">E-mail et téléphone</label>
                 <div class="field-body is-horizontal">
                   <div class="field">
-                    <p class="control is-expanded">
-                      <input class="input" type="email" name="_replyto" placeholder="E-mail">
+                    <p class="control is-expanded has-icons-left">
+                      <input class="input" type="email" name="_replyto" placeholder="Votre adresse e-mail">
+                      <span class="icon is-small is-left">
+                        <i class="fa fa-envelope"></i>
+                      </span>
                     </p>
                   </div>
                   <div class="field">
-                    <p class="control is-expanded">
-                      <input class="input" type="phone" name="phone" placeholder="Téléphone">
+                    <p class="control is-expanded has-icons-left">
+                      <input class="input" type="phone" name="phone" placeholder="Votre numéro de téléphone">
+                      <span class="icon is-small is-left">
+                        <i class="fa fa-phone"></i>
+                      </span>
                     </p>
                   </div>
                 </div>
@@ -81,7 +127,7 @@
                 <label class="label">Sujet</label>
                 <div class="control">
                   <input class="input" type="subject" name="subject"
-                    placeholder="e.g. développement d'un site internet, infogérence...">
+                    placeholder="e.g. développement d'un site internet, infogérance...">
                 </div>
               </div>
 
@@ -95,11 +141,9 @@
 
               <div class="field">
                 <div class="control">
-                  <a class="button is-medium" type="submit">Envoyer</a>
+                  <input class="button" type="submit" value="Envoyer">
                 </div>
               </div>
-            </div>
-          </div>
         </section>
       </div>
     </div>
@@ -107,17 +151,15 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>Clic2000</strong>, entrepreneurs au sein de la coopérative <a
-          href="https://www.cae29.coop/">Chrysalide</a>. <br>
-        <i class="fa fa-envelope"></i> <a
-          href="mailto:&#099;&#111;&#110;&#116;&#097;&#099;&#116;&#064;&#099;&#108;&#105;&#099;&#050;&#048;&#048;&#048;&#046;&#102;&#114;">Nous
-          contacter</a>
-        <div class="output">
-        </div>
+        <strong>Clic2000</strong>, entrepreneur·euse·s au sein de la coopérative <a href="https://www.cae29.coop/">Chrysalide</a>. 
+        <br>
+        <i class="fa fa-gavel" aria-hidden="true"></i> <a href="mentions-legales.html">Mentions légales</a>
       </p>
+      <div class="output">
+      </div>
     </div>
   </footer>
-  <script src="js/script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

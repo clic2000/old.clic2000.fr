@@ -5,12 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clic2000</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="css/styles.css">
-=======
+    <title>Clic2000 - Coopérative</title>
     <link rel="stylesheet" href="assets/css/styles.css">
->>>>>>> dev
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
         integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     <meta name="description" content="Artisanat numérique, création de sites web et infogérance sur mesure.">
@@ -34,17 +30,17 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
-    <div class="container">
+<body class="site">
+    <div class="container site-content">
         <!-- Logo -->
         <div class="columns">
             <div class="column is-4">
-                <div id="logo">
+                <h1 id="logo">
                     <a href="index.html" id="link-logo"><img src="assets/img/logo.svg" alt="Logo de Clic2000 avec deux yeux regardant le contenu de la page"></a>
-                </div>
-                <h1 class="brand-logo has-text-centered is-size-3">
-                    <a id="home" href="index.html">CLIC2000</a>
                 </h1>
+                <div class="brand-logo has-text-centered is-size-3">
+                    <a id="home" href="index.html">CLIC2000</a>
+                </div>
                 <!-- Menu Mobile -->
                 <div class="is-hidden-desktop">
                     <div class="dropdown" id="menu">
@@ -72,33 +68,31 @@
                 <div class="is-hidden-touch">
                     <div class="menu" role="menu">
                         <ul>
-                            <li><a role="menuitem"  href="artisanat.html">Artisanat numérique</a></li>
-                            <li><a role="menuitem"  href="services.html">Services</a></li>
-                            <li><a role="menuitem"  href="cooperative.html">Coopérative</a></li>
-                            <li><a role="menuitem"  href="references.html">Références</a></li>
-                            <li><a role="menuitem"  href="contact.html">Contact</a></li>
+                            <li><a role="menuitem" href="artisanat.html">Artisanat numérique</a></li>
+                            <li><a role="menuitem" href="services.html">Services</a></li>
+                            <li><a role="menuitem" href="cooperative.html">Coopérative</a></li>
+                            <li><a role="menuitem" href="references.html">Références</a></li>
+                            <li><a role="menuitem" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="column is-three-quarters" id="illustration">
-                <!-- Illustration -->
-                <img src="assets/img/undraw_pair_programming_njlp.svg" alt="Dessin de deux personnes devant un ordinateur">
-                <!-- Article -->
-                <section class="section article">
-                    <div class="columns">
-                        <div class="column is-7">
-                            <h1 class="is-size-2 title">Artisanat numérique, création de sites web et infogérance</h1>
-                            <p>
-                                Chez <strong class="shadow">Clic2000</strong> nous avons à coeur de construire et mener les projets en partenariat avec nos client·e·s.
-                            </p>
-                            <br>
-                            <p>
-                                Vous connaissez vos interlocuteur·ice·s, nous nous rencontrons et élaborons <strong class="shadow">votre projet numérique</strong> ensemble, de la conception à la mise en production. Nous travaillons sur mesure, chaque projet est unique. 
-                                <br>
-                                <button class="button" onclick="window.location.href = 'artisanat.html';">En savoir plus</button>
-                        </div>
-                    </div>
+            <!-- Text content -->
+            <div class="content column is-7">
+                <section class="section coop">
+                    <h1 class="title is-size-2">Chrysalide</h1>
+                    <p>
+                        <span class="shadow">Clic2000</span> est membre de la coopérative d’activités et d’emplois <span class="shadow">Chrysalide</span> créée dans le Finistère en 2002. 
+                        <br>
+                        La coopérative permet de mutualiser les ressources administratives, juridiques, bancaires et comptables. Chaque activité hébergée représente une unité de production à part entière et autonome. L’entrepreneur·se bénéficie du statut de salarié, le salaire étant produit par le chiffre d’affaires de l’activité. L’entrepreneur·se est dirigeant·e de l’activité qu’elle ou il développe et seul·e détenteur·ice de son identité commerciale.
+                    </p>
+                    <p>
+                        Des entrepreneur·euse·s de métiers très divers sont accueillis : des prestations de services aux particuliers et aux entreprises ou des activités de production et de négoce, aux activités de services à la personne, aux métiers relevant du champ des arts plastiques et graphiques, du design, de l’audiovisuel, de l’édition, du spectacle vivant, et des métiers du bâtiment.
+                        <br>
+                        <br>
+                        Pas question de se tirer dans les pattes, nous coopérons avec <a href="https://www.cae29.coop/-entrepreneurs-.html">les autres membres</a> et menons parfois des projets ensemble.
+                    </p>
+                    <a class="grayscale" href="https://www.cae29.coop" target="_blank" rel="noopener noreferrer"><img src="assets/img/logo-cae29-chrysalide.png" alt="logo coopérative chrysalide"></a>
                 </section>
             </div>
         </div>

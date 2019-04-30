@@ -1,0 +1,102 @@
+@import "variables";
+
+//LOGO
+
+#logo {
+    width: 150px;
+    height: 150px;
+    margin-top: 150px;
+}
+
+// BRAND-LOGO
+
+.brand-logo {
+    width: 150px;
+    height: 150px;
+    font-family: $title-font;
+}
+
+//MENU
+
+.menu {
+
+    li {
+        list-style: none;
+    }
+
+    a {
+        padding: 7px;
+        background-color: $purple-light;
+        text-decoration: none;
+        color: $gray-pink;
+        letter-spacing: $letter-spacing;
+        transition: all 0.3s ease-out;
+        display: inline-block;
+    }
+
+    a:hover {
+        transform: translate(18px, 0px);
+        color: $gray-pink;
+    }
+}
+
+// ILLUSTRATION
+
+#illustration {
+    margin-top: 20px;
+
+    img {
+        height: 500px;
+        width: auto;
+    }
+}
+
+//BRAND-NAME
+
+#brand-name {
+    color: $purple-light;
+}
+
+// MARGES CONTENU
+
+%margins-content {
+    margin-top: 9em;
+    margin-bottom: 9em;
+}
+
+// FORMULAIRE
+
+.formulaire {
+    @extend %margins-content;
+}
+
+// TEXTE COOPERATIVE
+
+.coop {
+    @extend %margins-content;
+}
+
+// CONTENU ARTISANAT
+
+.art {
+    @extend %margins-content;
+}
+
+// REFERENCES
+
+.ref {
+    @extend %margins-content;
+}
+
+.head-bloc {
+    padding-bottom: 5.5em;
+}
+
+.main-bloc {
+    margin-bottom: 7em;
+    padding-bottom: 5.5em;
+    border-bottom: solid 1px rgba(191, 48, 108, 0.2);
+    margin-top: 7em;
+    padding-top: 5.5em;
+    border-top: solid 1px rgba(191, 48, 108, 0.2);
+}

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,12 +6,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Clic2000</title>
-<<<<<<< HEAD
-    <link rel="stylesheet" href="css/styles.css">
-=======
+    <title>Clic2000 - Services</title>
     <link rel="stylesheet" href="assets/css/styles.css">
->>>>>>> dev
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.1.7/css/fork-awesome.min.css"
         integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     <meta name="description" content="Artisanat numérique, création de sites web et infogérance sur mesure.">
@@ -34,17 +31,17 @@
     <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
-    <div class="container">
+<body class="site">
+    <div class="container site-content">
         <!-- Logo -->
         <div class="columns">
             <div class="column is-4">
-                <div id="logo">
+                <h1 id="logo">
                     <a href="index.html" id="link-logo"><img src="assets/img/logo.svg" alt="Logo de Clic2000 avec deux yeux regardant le contenu de la page"></a>
-                </div>
-                <h1 class="brand-logo has-text-centered is-size-3">
-                    <a id="home" href="index.html">CLIC2000</a>
                 </h1>
+                <div class="brand-logo has-text-centered is-size-3">
+                    <a id="home" href="index.html">CLIC2000</a>
+                </div>
                 <!-- Menu Mobile -->
                 <div class="is-hidden-desktop">
                     <div class="dropdown" id="menu">
@@ -72,33 +69,43 @@
                 <div class="is-hidden-touch">
                     <div class="menu" role="menu">
                         <ul>
-                            <li><a role="menuitem"  href="artisanat.html">Artisanat numérique</a></li>
-                            <li><a role="menuitem"  href="services.html">Services</a></li>
-                            <li><a role="menuitem"  href="cooperative.html">Coopérative</a></li>
-                            <li><a role="menuitem"  href="references.html">Références</a></li>
-                            <li><a role="menuitem"  href="contact.html">Contact</a></li>
+                            <li><a role="menuitem" href="artisanat.html">Artisanat numérique</a></li>
+                            <li><a role="menuitem" href="services.html">Services</a></li>
+                            <li><a role="menuitem" href="cooperative.html">Coopérative</a></li>
+                            <li><a role="menuitem" href="references.html">Références</a></li>
+                            <li><a role="menuitem" href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="column is-three-quarters" id="illustration">
-                <!-- Illustration -->
-                <img src="assets/img/undraw_pair_programming_njlp.svg" alt="Dessin de deux personnes devant un ordinateur">
-                <!-- Article -->
-                <section class="section article">
-                    <div class="columns">
-                        <div class="column is-7">
-                            <h1 class="is-size-2 title">Artisanat numérique, création de sites web et infogérance</h1>
-                            <p>
-                                Chez <strong class="shadow">Clic2000</strong> nous avons à coeur de construire et mener les projets en partenariat avec nos client·e·s.
-                            </p>
-                            <br>
-                            <p>
-                                Vous connaissez vos interlocuteur·ice·s, nous nous rencontrons et élaborons <strong class="shadow">votre projet numérique</strong> ensemble, de la conception à la mise en production. Nous travaillons sur mesure, chaque projet est unique. 
-                                <br>
-                                <button class="button" onclick="window.location.href = 'artisanat.html';">En savoir plus</button>
-                        </div>
-                    </div>
+            <!-- Text content -->
+            <div class="content column is-7">
+                <section class="section coop">
+                    <h1 class="title is-size-2">Services</h1>
+                    <p>
+                        Nous développons <span class="shadow">vos sites internet entièrement sur mesure</span> (sites statiques comme dynamiques) et hébergeons ces derniers, nos gestionnaires de contenu favoris sont <a href="https://bludit.com">Bludit</a> et <a href="https://pluxml.org">PluXml</a>.
+                    </p>
+                    <p>
+                        Nous vous accompagnons dans <span class="shadow">l'état des lieux</span> de votre infrastructure informatique et l'utilisation de vos outils numériques. Nous réalisons un <span class="shadow">audit de l'existant</span> et pouvons ensuite vous soumettre des propositions concrètes, c'est <span class="shadow">notre travail de conseil</span>.
+                    </p>
+                    <p>
+                        Nous sommes en mesure de vous fournir tous les outils numériques nécessaires à la coopération, nous proposons une multitude de services :
+                        <ul>
+                            <li>Besoin de votre propre système de partage de fichiers collaboratif ? Découvrez la suite logicielle <a href="https://nextcloud.com">Nextcloud</a>.</li>
+                            <li>Vous voulez une messagerie instantanée interne ? Essayez <a href="https://mattermost.com">Mattermost</a> et son ingénieux système d'équipes.</li>
+                            <li>Une gestion fine de vos calendriers, listes de contacts est nécessaire ? Nous vous proposons l'excellent projet <a href="https://sogo.nu">SOGo</a> qui intègre ces fonctionnalités avec l'e-mail.</li>
+                        </ul>
+                        Nous vous <span class="shadow">formons à l'utilisation des outils mis en place</span>, en assurons la maintenance et le support. Ces derniers ne sont pas une source d'inquiétude mais vous permettent au contraire de regagner en <span class="shadow">confiance et en autonomie</span>.
+                    </p>
+                    <p>
+                        Si vous avez des besoins particuliers en terme de <span class="shadow">confidentialité</span>, que votre activité nécessite de nombreux services, il est intéressant de vous faire bénéficier de <span class="shadow">votre propre serveur dédié</span>. Nous pouvons alors vos accompagner dans l'utilisation de <a href="https://yunohost.org">Yunohost</a> qui vous permettra de gérer aisément les comptes utilisateur·ices, leurs adresses e-mail, leurs droits d'accès aux services mentionnés plus haut.
+                    </p>
+                    <article class="message">
+                            <div class="message-body">
+                              <i class="fa fa-question-circle" aria-hidden="true"></i> Vous ne trouvez pas ce qui correspond à vos besoins ici :<br>
+                              Pas de problème, nous ne listons pas tout ce que nous sommes en mesure de faire. <a href="contact.html">Envoyez nous un message</a> expliquant ce que vous recherchez et nous vous répondrons dans les plus brefs délais !
+                            </div>
+                    </article>
                 </section>
             </div>
         </div>
