@@ -17,6 +17,15 @@
     font-family: $title-font;
 }
 
+// LANG
+
+#lang {
+    position: absolute;
+    right: 50px;
+    top: 20px;
+    z-index: 1;
+}
+
 //MENU
 
 .menu {
