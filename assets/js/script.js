@@ -5,12 +5,9 @@ function toggleDropdown() {
   element.classList.toggle("is-active");
 }
 
-// Menu lang
-
-
-function toggleDropdown() {
+function toggleDropdownLang() {
   var element = document.getElementById("menu-lang");
-  element.classList.toggle("is-hoverable");
+  element.classList.toggle("is-active");
 }
 
 //Fade in
