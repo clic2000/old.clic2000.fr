@@ -1,21 +1,3 @@
-// Navigation timing
-
-window.addEventListener("load", function () {
-  let now = new Date().getTime();
-  let loadingTime = now - performance.timing.navigationStart;
-
-  document.querySelector(".output").innerText =
-    "Chargement de la page : " + loadingTime + " ms";
-}, false);
-
-window.addEventListener("load", function () {
-  let now = new Date().getTime();
-  let loadingTime = now - performance.timing.navigationStart;
-
-  document.querySelector(".output-en").innerText =
-    "Page loading : " + loadingTime + " ms";
-}, false);
-
 // Menu Dropdown
 
 function toggleDropdown() {
