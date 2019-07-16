@@ -1,11 +1,12 @@
 // Menu Dropdown
 
+document.getElementById("toggle1").onclick = function() {toggleDropdownLang()};
+document.getElementById("toggle2").onclick = function() {toggleDropdown()};
+
 function toggleDropdown() {
   var element = document.getElementById("menu");
   element.classList.toggle("is-active");
 }
-
-document.getElementById("toggle1").onclick = function() {toggleDropdownLang()};
 
 function toggleDropdownLang() {
   var element = document.getElementById("menu-lang");
