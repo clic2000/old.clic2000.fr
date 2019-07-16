@@ -5,6 +5,8 @@ function toggleDropdown() {
   element.classList.toggle("is-active");
 }
 
+document.getElementById("toggle1").onclick = function() {toggleDropdownLang()};
+
 function toggleDropdownLang() {
   var element = document.getElementById("menu-lang");
   element.classList.toggle("is-active");
