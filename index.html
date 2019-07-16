@@ -23,7 +23,24 @@
 </head>
 
 <body>
-    <div id="lang"><a class="button is-small" href="index.html">fr</a> <a class="button is-small" href="en/index.html">en</a></div>
+    <div id="lang">
+        <div class="dropdown is-right" id="menu-lang">
+            <div class="dropdown-trigger">
+                <div aria-haspopup="true" aria-controls="dropdown-menu" id="toggle1">
+                        <span class="icon is-small">
+                                <i class="fa fa-language" aria-hidden="true"></i>
+                        </span>
+                    <span class="cursor">Langues</span>
+                </div>
+            </div>
+            <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                    <div class="dropdown-content">
+                        <a role="menuitem" href="en/index.html" class="dropdown-item">English</a>
+                        <a role="menuitem" href="index.html" class="dropdown-item">Français</a>
+                    </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <!-- Logo -->
         <div class="columns">
@@ -32,14 +49,13 @@
                     <a href="index.html" id="link-logo"><img src="assets/img/logo-main.svg" alt="Logo de Clic2000 avec deux yeux regardant le contenu de la page"></a>
                 </div>
                 <h1 class="brand-logo has-text-centered is-size-3">
-                    <a id="home" href="index.html">CLIC2000</a>
+                    <a id="home" href="index.html">Clic2000</a>
                 </h1>
                 <!-- Menu Mobile -->
                 <div class="is-hidden-desktop">
                     <div class="dropdown" id="menu">
                         <div class="dropdown-trigger">
-                            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu"
-                                onclick="toggleDropdown(); return false;">
+                            <button class="button" aria-haspopup="true" aria-controls="dropdown-menu" id="toggle2">
                                 <span>Menu</span>
                                 <span class="icon is-small">
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -79,11 +95,11 @@
                         <div class="column is-7">
                             <h1 class="is-size-2 title">Artisanat numérique, création de sites web et infogérance</h1>
                             <p>
-                                Chez <strong class="shadow">Clic2000</strong> nous avons à coeur de construire et mener les projets en partenariat avec nos client·e·s. Vous connaissez vos interlocuteur·ice·s, nous nous rencontrons et élaborons ensemble <strong class="shadow">votre projet numérique</strong>, de la conception à la mise en production.
+                                Chez <strong class="shadow">Clic2000</strong> nous avons à coeur de construire et mener des projets en partenariat direct avec nos client·e·s. Vous connaissez vos interlocuteur·ice·s, nous nous rencontrons et élaborons ensemble <strong class="shadow">votre projet numérique</strong>, de la conception à la mise en production.
                             </p>
                             <br>
                             <p>
-                                Nous travaillons avec un maximum de <a href="https://fr.wikipedia.org/wiki/Logiciel_libre">logiciel libre</a>. Notre approche est sur mesure, chaque projet est unique. 
+                                Nous travaillons avec un maximum de <a href="https://fr.wikipedia.org/wiki/Logiciel_libre">logiciel libre</a>, le reste est exclusivement <a href="https://fr.wikipedia.org/wiki/Open_source">open source</a>. Notre approche est sur mesure, chaque projet est unique. 
                                 <br>
                                 <button class="button" onclick="window.location.href = 'artisanat.html';">En savoir plus</button>
                         </div>
@@ -97,28 +113,13 @@
             <p>
                 <strong>Clic2000</strong>, entrepreneur·euse·s au sein de la coopérative <a href="https://www.cae29.coop/">Chrysalide</a>. 
                 <br>
-                <i class="fa fa-gavel" aria-hidden="true"></i> <a href="mentions-legales.html">Mentions légales</a>
+                <a href="mentions-legales.html">Mentions légales</a> - <a href="https://falafel.clic2000.net/@admin"><i class="fa fa-mastodon" aria-hidden="true" title="mastodon"></i></a> <a href="https://twitter.com/clic_2000"><i class="fa fa-twitter" aria-hidden="true" title="twitter"></i></a>
             </p>
             <div class="output">
             </div>
         </div>
     </footer>
     <script src="assets/js/script.js"></script>
-    <!-- Fathom - simple website analytics - https://github.com/usefathom/fathom -->
-    <script>
-        (function(f, a, t, h, o, m){
-            a[h]=a[h]||function(){
-                (a[h].q=a[h].q||[]).push(arguments)
-            };
-            o=f.createElement('script'),
-            m=f.getElementsByTagName('script')[0];
-            o.async=1; o.src=t; o.id='fathom-script';
-            m.parentNode.insertBefore(o,m)
-        })(document, window, '//stats.clic2000.fr/tracker.js', 'fathom');
-        fathom('set', 'siteId', 'JEHMY');
-        fathom('trackPageview');
-    </script>
-    <!-- / Fathom -->
+    <script src="assets/js/navigation-fr.js"></script>
 </body>
-
 </html>
