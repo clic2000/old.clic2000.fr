@@ -9,8 +9,16 @@ function toggleDropdown() {
 }
 
 function toggleDropdownLang() {
-  var element = document.getElementById("menu-lang");
-  element.classList.toggle("is-active");
+  document.getElementById("menu-lang").classList.toggle("is-active");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.click')) {
+  var myDropdown = document.getElementById("menu-lang");
+    if (myDropdown.classList.contains('is-active')) {
+      myDropdown.classList.remove('is-active');
+    }
+  }
 }
 
 //Fade in
