@@ -1,4 +1,4 @@
-# website
+# Clic2000 website
 
 Static website for Clic2000. Using [Bulma](https://bulma.io).
 
