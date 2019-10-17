@@ -1,6 +1,6 @@
 # website
 
-Static website for clic2000. Using [Bulma](https://bulma.io).
+Static website for Clic2000. Using [Bulma](https://bulma.io).
 
 Using [Sass](https://sass-lang.com/) preprocessor. Install it with Homebrew: ```brew install sass```
 
