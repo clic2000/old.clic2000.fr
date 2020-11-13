@@ -5,8 +5,7 @@ window.addEventListener(
     let now = new Date().getTime();
     let loadingTime = now - performance.timing.navigationStart;
 
-    document.querySelector(".output-en").innerText =
-      "Page loading : " + loadingTime + " ms";
+    document.querySelector(".output-en").innerText = "Page loading : " + loadingTime + " ms";
   },
   false
 );
