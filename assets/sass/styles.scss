@@ -59,7 +59,7 @@ html {
 }
 
 .footer {
-    margin-top: 25px;
+    padding-top: 25px;
     border-top: 1px solid rgba(191, 48, 108, 0.2);
     background-color: $gray-pink;
 }
@@ -99,4 +99,21 @@ html {
 
 .click {
     cursor: pointer;
+}
+
+//SECTION REFERENCES INDEX
+
+.home-ref {
+    background-color: $lighter-pink;
+}
+
+.ref-img {
+    width: 8%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    opacity: .7;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
 }
