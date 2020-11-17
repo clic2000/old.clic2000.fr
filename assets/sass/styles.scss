@@ -3,7 +3,7 @@
 @import "variables";
 @import "font";
 @import "mobile";
-@import "../bulma/bulma-0.7.4/bulma.sass";
+@import "../bulma/bulma-2/bulma.sass";
 @import "fork-awesome.scss";
 
 // FONTS
@@ -14,89 +14,107 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $title-font;
+  font-family: $title-font;
 }
 
 // GENERAL
 
 body,
 html {
-    width: 100%;
-    height: 100%;
-    background-color: $gray-pink;
+  width: 100%;
+  height: 100%;
+  background-color: $gray-pink;
 
-    a {
-        position: relative;
-        color: $purple-light;
-        text-decoration: none;
-    }
+  a {
+    position: relative;
+    color: $purple-light;
+    text-decoration: none;
+  }
 
-    a:hover {
-        color: $purple-light;
-    }
+  a:hover {
+    color: $purple-light;
+  }
 }
 
 .shadow {
-    box-shadow: inset 0 -6px 0 rgba(191, 48, 108, 0.2);
-    font-weight: normal;
+  box-shadow: inset 0 -6px 0 rgba(191, 48, 108, 0.2);
+  font-weight: normal;
 }
 
 .button {
-    background-color: $purple-light;
-    color: $gray-pink;
-    border: none;
-    margin-top: 30px;
-    text-align: center;
-    text-decoration: none;
-    letter-spacing: $letter-spacing;
-    border-radius: 0%;
+  background-color: $purple-light;
+  color: $gray-pink;
+  border: none;
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: $letter-spacing;
+  border-radius: 0%;
 }
 
 .button:hover {
-    background-color: $gray-pink;
-    color: $purple-light;
-    border: 1px $purple-light solid;
+  background-color: $gray-pink;
+  color: $purple-light;
+  border: 1px $purple-light solid;
 }
 
 .footer {
-    margin-top: 25px;
-    border-top: 1px solid rgba(191, 48, 108, 0.2);
-    background-color: $gray-pink;
+  padding-top: 25px;
+  border-top: 1px solid rgba(191, 48, 108, 0.2);
+  background-color: $gray-pink;
 }
 
 .site {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 .site-content {
-    flex: 1;
+  flex: 1;
 }
 
 //FILTER FOR IMAGES
 
 .grayscale {
-    filter: grayscale(100%);
+  filter: grayscale(100%);
 }
 
 .grayscale:hover {
-    filter: grayscale(0%);
-    transition: all 1s;
+  filter: grayscale(0%);
+  transition: all 1s;
 }
 
 //FONT
 
 .content h1 {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .title {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 //CURSOR HOVER
 
 .click {
-    cursor: pointer;
+  cursor: pointer;
+}
+
+//SECTION REFERENCES INDEX
+
+.home-ref {
+  background-color: $lighter-pink;
+}
+
+.ref-img {
+  width: 8%;
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 1px;
+  margin-top: 1px;
+  opacity: 0.7;
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  vertical-align: middle;
 }

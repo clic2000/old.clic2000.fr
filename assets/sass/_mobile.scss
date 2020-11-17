@@ -1,52 +1,51 @@
 @import "variables";
 
 @media screen and (max-width: 500px) {
+  //LOGO
+  #logo {
+    margin-top: 30px;
+    margin-left: 40px;
+  }
 
-    //LOGO
-    #logo {
-        margin-top: 30px;
-        margin-left: 40px;
-    }
+  .menu {
+    margin-top: 40px;
+  }
 
-    .menu {
-        margin-top: 40px;
-    }
+  .brand-logo {
+    height: 50px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
 
-    .brand-logo {
-        height: 50px;
-        margin-left: 40px;
-        margin-bottom: 20px;
-    }
+  //ILLUSTRATION
+  #illustration {
+    margin-top: -130px;
+  }
 
-    //ILLUSTRATION
-    #illustration {
-        margin-top: -130px;
-    }
+  .article {
+    margin-top: -130px;
+  }
 
-    .article {
-        margin-top: -130px;
-    }
+  //CONTENT
 
-    //CONTENT
+  %margins-mobile {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 
-    %margins-mobile {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
+  .coop {
+    @extend %margins-mobile;
+  }
 
-    .coop {
-      @extend %margins-mobile;
-    }
+  .formulaire {
+    @extend %margins-mobile;
+  }
 
-    .formulaire {
-      @extend %margins-mobile;
-    }
+  .art {
+    @extend %margins-mobile;
+  }
 
-    .art {
-      @extend %margins-mobile;
-    }
-
-    .ref {
-        @extend %margins-mobile;
-    }
+  .ref {
+    @extend %margins-mobile;
+  }
 }
