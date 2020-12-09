@@ -1,30 +1,3 @@
-// Menu Dropdown
-
-document.getElementById("toggle1").onclick = function () {
-  toggleDropdownLang();
-};
-document.getElementById("toggle2").onclick = function () {
-  toggleDropdown();
-};
-
-function toggleDropdown() {
-  var element = document.getElementById("menu");
-  element.classList.toggle("is-active");
-}
-
-function toggleDropdownLang() {
-  document.getElementById("menu-lang").classList.toggle("is-active");
-}
-
-window.onclick = function (event) {
-  if (!event.target.matches(".click")) {
-    var myDropdown = document.getElementById("menu-lang");
-    if (myDropdown.classList.contains("is-active")) {
-      myDropdown.classList.remove("is-active");
-    }
-  }
-};
-
 //Fade in
 
 var el = document.getElementsByClassName("section")[0];
