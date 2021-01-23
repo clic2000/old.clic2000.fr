@@ -10,9 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
-      - name: Delete previous compiled files
-        run: rm assets/css/styles.css
-      
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.3.3
         with:
