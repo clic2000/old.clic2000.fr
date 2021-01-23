@@ -1,4 +1,4 @@
-name: Sass compilation
+name: Sass
 
 on:
   push:
