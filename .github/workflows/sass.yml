@@ -23,7 +23,7 @@ jobs:
           source: assets/sass/styles.scss
           destination: assets/css/styles.css
 
-     - name: Push changes
+      - name: Push changes
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
