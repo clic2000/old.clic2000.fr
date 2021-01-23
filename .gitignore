@@ -4,9 +4,6 @@
 *.sass.map
 *.scss.map
 
-# CSS
-assets/css/
-
 # ---> macOS
 # General
 .DS_Store
