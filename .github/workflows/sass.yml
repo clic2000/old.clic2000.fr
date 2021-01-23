@@ -10,8 +10,21 @@ jobs:
     runs-on: ubuntu-latest
 
     steps: 
+      - name: Checkout source Git branch
+        uses: actions/checkout@v2
+        with:
+            ref: production
+            fetch-depth: 10
+            submodules: true
+
       - name: Compile CSS from SCSS files
         uses: gha-utilities/sass-build@v0.3.3
         with:
           source: assets/sass/styles.scss
           destination: assets/css/styles.css
+
+     - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: gh-pages
