@@ -31,6 +31,9 @@ jobs:
         with:
             ref: pr-pages
             fetch-depth: 1
+            
+      - name: Delete previous compiled files
+        run: rm -Rf assets/css
 
       - name: Move compiled CSS to path within pr-pages branch
         run: mv /tmp/clic2000.fr/assets/css assets/
