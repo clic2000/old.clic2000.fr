@@ -1,3 +1,5 @@
+name: Sass compilation
+
 on:
   push:
     branches:
