@@ -58,3 +58,4 @@ jobs:
           head: pr-pages
           base: gh-pages
           title: 'Updates site files from latest Actions build'
+          body: Let's put last changes live online!
