@@ -3,6 +3,7 @@
 *.css.map
 *.sass.map
 *.scss.map
+assets/css/styles.css
 
 # ---> macOS
 # General
@@ -47,7 +48,9 @@ Sessionx.vim
 # Temporary
 .netrwhist
 *~
+
 # Auto-generated tag files
 tags
+
 # Persistent undo
 [._]*.un~
