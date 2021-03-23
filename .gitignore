@@ -3,7 +3,7 @@
 *.css.map
 *.sass.map
 *.scss.map
-assets/css/styles.css
+assets/css/
 
 # ---> macOS
 # General
