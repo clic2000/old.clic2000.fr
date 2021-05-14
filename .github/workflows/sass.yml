@@ -1,0 +1,36 @@
+name: Build Sass & deploy
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  build_css:
+    runs-on: ubuntu-latest
+
+    steps: 
+      - name: Checkout source Git branch
+        uses: actions/checkout@v2
+        with:
+            ref: dev
+            fetch-depth: 0
+            submodules: true
+            persist-credentials: false
+
+      - name: Create destination directory
+        run: mkdir -vp assets/css
+
+      - name: Compile CSS from SCSS files
+        uses: gha-utilities/sass-build@v0.3.3
+        with:
+          source: assets/sass/styles.scss
+          destination: assets/css/styles.css
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@3.7.1
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: .
+          SILENT: true
