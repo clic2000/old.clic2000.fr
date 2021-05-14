@@ -11,7 +11,7 @@ jobs:
 
     steps: 
       - name: Checkout source Git branch
-        uses: actions/checkout@latest
+        uses: actions/checkout@v2
         with:
             ref: dev
             fetch-depth: 0
