@@ -22,7 +22,7 @@ jobs:
         run: mkdir -vp assets/css
 
       - name: Compile CSS from SCSS files
-        uses: gha-utilities/sass-build@latest
+        uses: gha-utilities/sass-build@v0.3.9
         with:
           source: assets/sass/styles.scss
           destination: assets/css/styles.css
